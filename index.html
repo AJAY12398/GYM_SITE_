@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('bg1.jpg');
+        height: 4500px;
+    }
+    .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 30px;
+            top: 20px;
+    }
+    .left img{
+        width: 80px;
+        filter: invert(70%);
+    }
+    .left div{
+        text-align: center;
+    }
+    .center{
+            display: block; 
+            width: 30%;
+            margin: 22px auto;
+            /* border: 2px solid red; */
+
+    }
+     .right{
+        position: absolute;
+        right: 30px;
+        top: 22px;
+        /* border: 2px solid red; */
+        display: inline-block;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 10px;
+    }
+    .navbar li a:hover , .navbar li a.active{
+            text-decoration: underline;
+            color: grey;
+
+    }
+    .btn{
+        margin: 6px 14px;
+        background-color:rgba(29, 24, 24, 0.342);
+        color: white;
+        padding: 5px 10px;
+        border: 2px solid grey;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(80, 74, 74);
+    }
+    .container{
+        border: 2px solid grey;
+        margin: 180px 80px;
+        padding: 53px 118px;
+        border-radius: 10px;
+        width: 33%;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 300px;
+        margin: 2px auto;
+        padding: 2px;
+        border: 2px solid black;
+        border-radius: 8px;
+    }
+    .container button{
+        display: block;
+        margin: auto;
+        width: 68%;
+    }
+    .container h1{
+        text-align: center;
+    }
+    input[type = "text"]:hover{
+        padding: 5px;
+    }
+    input[type = "number"]:hover{
+        padding: 5px;
+    }
+    input[type = "email"]:hover{
+        padding: 5px;
+    }
+    /* .container:hover{
+        padding: 2px;
+    } */
+</style>
+<body>
+        <header class="header">
+            <div class="left">
+                <img src="lo1.png" alt="Refresh">
+                <div>Fitness Club</div>
+            </div>
+            <div class="center">
+                <ul class="navbar">
+                    <li> <a href = '#' class = "active">Home</a></li>
+                    <li> <a href = '#'>Fitness</a></li>
+                    <li> <a href = '#'>About Us</a></li>
+                    <li> <a href = '#'>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <button class="btn">Call Us</button><button class="btn">Email us</button>
+            </div>
+        </header>
+        <div class="container">
+                <h1>Join Information</h1>
+                <form action="xyz.php">
+                     <div class="form-group">
+                         <input type="text" name = "" placeholder="Enter Your Name">
+                     </div>
+                     <div class="form-group">
+                        <input type="text" name = "" placeholder="Enter Your Gender">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name = "" placeholder="Enter Your Age">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name = "" placeholder="Enter Your Contact Number">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name = "" placeholder="Enter Your Email id ">
+                    </div>
+                    <button class="btn">Submit</button>
+
+                </form>
+        </div>
+</body>
+</html>
